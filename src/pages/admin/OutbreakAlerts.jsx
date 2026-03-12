@@ -43,9 +43,30 @@ export default function OutbreakAlerts() {
         </div>
       </div>
 
+      {/* AI OUTBREAK ALERT CARD */}
+      <div className="card" style={{ marginBottom: '24px', borderLeft: '4px solid #8b5cf6', background: 'linear-gradient(to right, #fff, #f5f3ff)' }}>
+        <div className="card-header" style={{ borderBottom: 'none', paddingBottom: '0' }}>
+          <div className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#6d28d9' }}>
+             AI Outbreak Prediction
+          </div>
+        </div>
+        <div style={{ marginTop: '16px' }}>
+          <div style={{ fontSize: '15px', fontWeight: 600, color: '#334155', display: 'flex', alignItems: 'center', gap: '8px' }}>
+             Possible Dengue outbreak in Ramapur next week.
+          </div>
+          <div style={{ marginTop: '12px', fontSize: '13px', color: '#64748b' }}>
+            <strong>Basis:</strong> Anomalous spike in high fever and body ache symptoms (↑45%) over the last 96 hours.
+          </div>
+          <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span className="badge badge-red">Risk Level: HIGH</span>
+            <span className="badge badge-blue">Confidence: 87%</span>
+          </div>
+        </div>
+      </div>
+
       {/* Live Map */}
       <div style={{ marginBottom: '24px' }}>
-        <OutbreakMap />
+        <OutbreakMap onOpenReport={setReportModal} onOpenDispatch={setDispatchModal} />
       </div>
 
       {/* Alert Details */}

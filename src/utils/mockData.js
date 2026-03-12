@@ -82,12 +82,12 @@ export const mockAdminStats = {
     { village: 'Chandpur', disease: 'Malaria', cases: 8, status: 'alert', lat: 25, lng: 75 },
   ],
   villages: [
-    { name: 'Rampur', x: 35, y: 45, status: 'alert', cases: 12 },
-    { name: 'Bhagalpur', x: 55, y: 30, status: 'watch', cases: 5 },
-    { name: 'Chandpur', x: 70, y: 55, status: 'alert', cases: 8 },
-    { name: 'Kota Gaon', x: 20, y: 65, status: 'clear', cases: 0 },
-    { name: 'Nandpur', x: 80, y: 40, status: 'clear', cases: 0 },
-    { name: 'Devgaon', x: 45, y: 70, status: 'watch', cases: 3 },
+    { name: 'Rampur', lat: 21.10, lng: 79.05, status: 'alert', cases: 18, population: 4200, topDisease: 'Viral Fever', healthWorker: 'Kavita Devi', lastVisit: 'Today' },
+    { name: 'Bhagalpur', lat: 21.15, lng: 79.10, status: 'watch', cases: 12, population: 3500, topDisease: 'Cholera', healthWorker: 'Asha Singh', lastVisit: '2 days ago' },
+    { name: 'Chandpur', lat: 21.05, lng: 78.95, status: 'alert', cases: 8, population: 2800, topDisease: 'Malaria', healthWorker: 'Priya Verma', lastVisit: 'Yesterday' },
+    { name: 'Kota Gaon', lat: 21.20, lng: 79.15, status: 'clear', cases: 2, population: 1500, topDisease: 'Common Cold', healthWorker: 'Kavita Devi', lastVisit: 'Today' },
+    { name: 'Nandpur', lat: 21.08, lng: 79.20, status: 'clear', cases: 1, population: 1200, topDisease: 'Skin Rash', healthWorker: 'Sunita Bai', lastVisit: '3 days ago' },
+    { name: 'Devgaon', lat: 21.12, lng: 78.90, status: 'watch', cases: 9, population: 3100, topDisease: 'Respiratory', healthWorker: 'Meena Sharma', lastVisit: 'Yesterday' },
   ],
 };
 
