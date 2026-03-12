@@ -14,10 +14,12 @@ const NAV = {
     { path: '/patient/profile', label: 'My Health Profile', emoji: '🏥' },
   ],
   healthworker: [
-    { path: '/healthworker/dashboard', label: 'Dashboard', emoji: '📊' },
-    { path: '/healthworker/register-patient', label: 'Register Patient', emoji: '👤' },
-    { path: '/healthworker/record-vitals', label: 'Record Vitals', emoji: '📈' },
+    { path: '/healthworker/dashboard',             label: 'Dashboard',             emoji: '📊' },
+    { path: '/healthworker/patients',              label: 'Patient List',          emoji: '👥' },
+    { path: '/healthworker/register-patient',      label: 'Register Patient',      emoji: '👤' },
+    { path: '/healthworker/record-vitals',         label: 'Record Vitals',         emoji: '📈' },
     { path: '/healthworker/consultation-requests', label: 'Consultation Requests', emoji: '📋' },
+    { path: '/healthworker/health-camp',           label: 'Health Camp',           emoji: '⛺' },
   ],
   doctor: [
     { path: '/doctor/dashboard', label: 'Dashboard', emoji: '👨‍⚕️' },
