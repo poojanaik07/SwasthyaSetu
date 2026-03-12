@@ -24,6 +24,8 @@ import HWDashboard from './pages/healthworker/HWDashboard';
 import RegisterPatient from './pages/healthworker/RegisterPatient';
 import RecordVitals from './pages/healthworker/RecordVitals';
 import ConsultationRequests from './pages/healthworker/ConsultationRequests';
+import PatientList from './pages/healthworker/PatientList';
+import HealthCamp from './pages/healthworker/HealthCamp';
 
 // Doctor pages
 import DoctorDashboard from './pages/doctor/DoctorDashboard';
@@ -87,9 +89,11 @@ export default function App() {
 
           {/* ── Health Worker ── */}
           <Route path="/healthworker/dashboard" element={<RolePage role="healthworker"><HWDashboard /></RolePage>} />
+          <Route path="/healthworker/patients" element={<RolePage role="healthworker"><PatientList /></RolePage>} />
           <Route path="/healthworker/register-patient" element={<RolePage role="healthworker"><RegisterPatient /></RolePage>} />
           <Route path="/healthworker/record-vitals" element={<RolePage role="healthworker"><RecordVitals /></RolePage>} />
           <Route path="/healthworker/consultation-requests" element={<RolePage role="healthworker"><ConsultationRequests /></RolePage>} />
+          <Route path="/healthworker/health-camp" element={<RolePage role="healthworker"><HealthCamp /></RolePage>} />
 
           {/* ── Doctor ── */}
           <Route path="/doctor/dashboard" element={<RolePage role="doctor"><DoctorDashboard /></RolePage>} />
