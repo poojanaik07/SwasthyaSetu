@@ -33,11 +33,11 @@ export const mockPharmacies = [
 
 export const mockMedicines = [
   { id: 1, name: 'Paracetamol 500mg', stock: 450, expiry: '2027-06', price: 2.5, category: 'Analgesic', lowStock: false },
-  { id: 2, name: 'Amoxicillin 250mg', stock: 12, expiry: '2026-09', price: 8.0, category: 'Antibiotic', lowStock: true },
+  { id: 2, name: 'Amoxicillin 250mg', stock: 12, expiry: '2026-03', price: 8.0, category: 'Antibiotic', lowStock: true }, // Expires soon
   { id: 3, name: 'ORS Sachet', stock: 200, expiry: '2027-12', price: 5.0, category: 'Rehydration', lowStock: false },
   { id: 4, name: 'Metformin 500mg', stock: 8, expiry: '2026-11', price: 6.5, category: 'Antidiabetic', lowStock: true },
   { id: 5, name: 'Azithromycin 500mg', stock: 95, expiry: '2027-03', price: 45.0, category: 'Antibiotic', lowStock: false },
-  { id: 6, name: 'Cetirizine 10mg', stock: 5, expiry: '2026-08', price: 3.0, category: 'Antihistamine', lowStock: true },
+  { id: 6, name: 'Cetirizine 10mg', stock: 5, expiry: '2026-04', price: 3.0, category: 'Antihistamine', lowStock: true }, // Expires soon
   { id: 7, name: 'Iron + Folic Acid', stock: 300, expiry: '2027-10', price: 4.0, category: 'Supplement', lowStock: false },
   { id: 8, name: 'Omeprazole 20mg', stock: 180, expiry: '2027-05', price: 7.5, category: 'Antacid', lowStock: false },
 ];
@@ -92,6 +92,7 @@ export const mockAdminStats = {
 };
 
 export const mockPrescriptionRequests = [
-  { id: 1, patient: 'Ramesh Kumar', doctor: 'Dr. Priya Sharma', date: '2026-03-12', medicines: ['Paracetamol 500mg x30', 'ORS Sachet x5'], status: 'pending' },
-  { id: 2, patient: 'Sunita Devi', doctor: 'Dr. Arjun Mehta', date: '2026-03-12', medicines: ['Amoxicillin 250mg x21', 'Cetirizine 10mg x10'], status: 'confirmed' },
+  { id: 1, patient: 'Ramesh Kumar', doctor: 'Dr. Priya Sharma', date: '2026-03-12', medicines: ['Paracetamol 500mg x30', 'ORS Sachet x5'], status: 'pending', priority: 'moderate' },
+  { id: 2, patient: 'Sunita Devi', doctor: 'Dr. Arjun Mehta', date: '2026-03-12', medicines: ['Amoxicillin 250mg x21', 'Cetirizine 10mg x10'], status: 'confirmed', priority: 'severe', isEmergency: true },
+  { id: 3, patient: 'Mohan Lal', doctor: 'Dr. Kavitha Nair', date: '2026-03-12', medicines: ['Omeprazole 20mg x14'], status: 'ready', priority: 'mild' },
 ];
