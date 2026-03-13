@@ -1,0 +1,16 @@
+[dotenv@17.3.1] injecting env (3) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Server running in development mode on port 5000
+MongoDB connection error: MongoParseError: options usenewurlparser, useunifiedtopology are not supported
+    at parseOptions (C:\SwasthyaSetu-shravani\backend\node_modules\mongodb\lib\connection_string.js:273:15)
+    at new MongoClient (C:\SwasthyaSetu-shravani\backend\node_modules\mongodb\lib\mongo_client.js:67:61)
+    at NativeConnection.createClient (C:\SwasthyaSetu-shravani\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:334:14)
+    at NativeConnection.openUri (C:\SwasthyaSetu-shravani\backend\node_modules\mongoose\lib\connection.js:1074:34)
+    at Mongoose.connect (C:\SwasthyaSetu-shravani\backend\node_modules\mongoose\lib\mongoose.js:469:15)
+    at Object.<anonymous> (C:\SwasthyaSetu-shravani\backend\server.js:27:4)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+  errorLabelSet: Set(0) {}
+}
+^C
